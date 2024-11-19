@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesabım - Com Ship</title>
+    <link rel="stylesheet" href="account.css"> <!-- CSS dosyasını bağladık -->
+</head>
+<body>
+    <!-- Navigasyon Çubuğu -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="Homepage.html">Ana Sayfa</a></li>
+            <li><a href="Marketplace.html">Pazar Yeri</a></li>
+            <li><a href="Cart.html">Sepetim</a></li>
+            <li><a href="Account.html" class="active">Hesabım</a></li>
+            <li><a href="Support.html" >Destek</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Banner Alanı -->
+    <div id="banner">
+        <div class="banner-content">Hesabım</div>
+    </div>
+
+    <!-- Sayfa İçeriği -->
+    <div class="content">
+        <div id="account-container" class="account-container">
+            <h2>Kullanıcı Bilgilerim</h2>
+
+            <!-- Kullanıcı Adı -->
+            <div class="input-container">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" value="JohnDoe" disabled> <!-- Disabled, sadece görüntüleme için -->
+            </div>
+
+            <!-- Müşteri Adresi -->
+            <div class="input-container">
+                <label for="address">Müşteri Adresi:</label>
+                <input type="text" id="address" value="İstanbul, Türkiye">
+            </div>
+
+            <!-- Telefon Numarası -->
+            <div class="input-container">
+                <label for="phone">Telefon Numarası:</label>
+                <input type="tel" id="phone" value="0532 123 45 67">
+            </div>
+
+            <!-- Kaydet Butonu -->
+            <button id="save-btn">Kaydet</button>
+        </div>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+</html>

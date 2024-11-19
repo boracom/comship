@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Com-Ship</title>
+
+    <!-- CSS Dosyaları -->
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="highlight.css">
+    <link rel="stylesheet" href="sepet.css"> <!-- Sepet CSS dosyasını bağladık -->
+</head>
+
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="Homepage.html">Ana Sayfa</a></li>
+            <li><a href="Marketplace.html">Pazar Yeri</a></li>
+            <li><a href="Cart.html">Sepetim</a></li>
+            <li><a href="Account.html">Hesabım</a></li>
+            <li><a href="Support.html">Destek</a></li>
+        </ul>
+    </nav>
+
+    <!-- Kaydırmalı Banner -->
+    <header id="banner">
+        <div class="banner-content">Com Ship</div>
+    </header>
+
+    <!-- Öne Çıkan Ürünler -->
+    <section id="featured-products">
+        <h2>Öne Çıkan Ürünler</h2>
+        <div class="product-list">
+            <!-- Ürünler -->
+            <div class="product">
+                <img src="images/product1.jpg" alt="Ürün 1">
+                <p class="price">₺199.99</p>
+                <p class="description">Bu ürün, mükemmel kalitesiyle dikkat çekiyor. Çok tercih edilen bir model.</p>
+                <button class="add-to-cart" data-id="1" data-name="Ürün 1" data-price="199.99">Sepete Ekle</button>
+            </div>
+
+            <div class="product">
+                <img src="images/product2.jpg" alt="Ürün 2">
+                <p class="price">₺249.99</p>
+                <p class="description">Yeni model! Göz alıcı tasarımı ve güçlü özellikleriyle öne çıkıyor.</p>
+                <button class="add-to-cart" data-id="2" data-name="Ürün 2" data-price="249.99">Sepete Ekle</button>
+            </div>
+
+            <div class="product">
+                <img src="images/product3.jpg" alt="Ürün 3">
+                <p class="price">₺349.99</p>
+                <p class="description">Yüksek performans arayanlar için ideal, dayanıklı ve şık bir ürün.</p>
+                <button class="add-to-cart" data-id="3" data-name="Ürün 3" data-price="349.99">Sepete Ekle</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sepetim Penceresi -->
+    <div id="cart-sidebar">
+        <h3>Sepetim</h3>
+        <div id="cart-items">
+            <!-- Ürünler buraya eklenecek -->
+        </div>
+        <div id="cart-total">
+            <span>Toplam Tutar:</span>
+            <span id="total-price">₺0.00</span>
+        </div>
+        <div id="cart-buttons">
+            <button id="clear-cart-btn">Sepeti Temizle</button>
+            <button id="checkout-btn">Satın Al</button>
+        </div>
+    </div>
+
+    <!-- JavaScript Dosyaları -->
+    <script src="app.js"></script>  <!-- app.js önce yüklenmeli -->
+
+</body>
+
+</html>

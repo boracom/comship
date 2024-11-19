@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destek - Com Ship</title>
+    <link rel="stylesheet" href="supbanner.css"> <!-- CSS dosyasını bağladık -->
+</head>
+
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="Homepage.html">Ana Sayfa</a></li>
+            <li><a href="Marketplace.html">Pazar Yeri</a></li>
+            <li><a href="Cart.html">Sepetim</a></li>
+            <li><a href="Account.html">Hesabım</a></li>
+            <li><a href="Support.html" class="active">Destek</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sabit Üst Banner -->
+    <header id="banner">
+        <div class="banner-content"></div>
+    </header>
+
+    <!-- Sayfa İçeriği -->
+    <div class="content">
+        <!-- Flexbox ile düzen -->
+        <div class="map-and-contact">
+            <!-- Harita Görseli -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1421.3002869135512!2d29.065555403975615!3d40.98957428285837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7ea0af76cd9%3A0x7c2651ce7dd4aca!2sBrooklyn%20Park!5e0!3m2!1str!2str!4v1731834778952!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- İletişim Bilgileri -->
+            <div class="contact-info">
+                <h2>İletişim Bilgileri</h2>
+                <p>Telefon: +90 543 696 22 99</p>
+                <p>Adres: Recep Mah. 123. Sokak, İstanbul, Türkiye</p>
+                <p>Email: <a href="mailto:support@comship.com">support@comship.com</a></p>
+            </div>
+        </div>
+
+        <!-- Sıkça Sorulan Sorular -->
+        <div class="faq-section">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">Soru 1: Com Ship hakkında bilgi alabilir miyim?</h3>
+                <p class="answer">Evet, Com Ship deniz taşımacılığı alanında uzmanlaşmış bir firmadır...</p>
+            </div>
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">Soru 2: Nasıl iletişime geçebilirim?</h3>
+                <p class="answer">Bize destek@comship.com adresinden ulaşabilirsiniz...</p>
+            </div>
+        </div>
+
+        <!-- İndirme Alanı ve Logo -->
+        <div class="footer-download">
+            <a href="files/satis_sozlesmesi.pdf" download>
+                <img src="images/download-icon.png" alt="Satış Sözleşmesi İndir" class="download-icon">
+                <p>Satış Sözleşmesi</p>
+            </a>
+            <div class="logo-space">
+                <img src="images/comship-logo.png" alt="Com Ship Logosu" width="400" height="400">
+            </div>
+            <a href="files/gizlilik_haklari.pdf" download>
+                <img src="images/download-icon.png" alt="Gizlilik Hakları İndir" class="download-icon">
+                <p>Gizlilik Hakları</p>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Soruya tıklandığında yanıtı göster/gizle
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

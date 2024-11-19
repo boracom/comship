@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet</title>
+    <link rel="stylesheet" href="cart.css"> <!-- CSS dosyasını bağladık -->
+</head>
+<body>
+    <!-- Navigasyon Menüsü -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="Homepage.html" class="nav-link">Ana Sayfa</a></li>
+            <li><a href="Marketplace.html" class="nav-link">Pazar Yeri</a></li>
+            <li><a href="Cart.html" class="nav-link active">Sepetim</a></li>
+            <li><a href="Account.html" class="nav-link">Hesabım</a></li>
+            <li><a href="Support.html" class="nav-link">Destek</a></li>
+        </ul>
+    </nav>
+
+    <!-- Kaydırmalı Banner -->
+    <header id="banner">
+        <div class="banner-content">Com Ship</div>
+    </header>
+
+    <!-- Sepet İçeriği -->
+    <div id="cart-container">
+        <h1>Sepetiniz</h1>
+
+        <!-- Sepet içeriği burada görüntülenecek -->
+        <div id="cart-items-container"></div>
+
+        <!-- Sepet Özeti -->
+        <div id="cart-summary">
+            <p id="total-quantity">Ürün Sayısı: 0</p>
+            <p id="total-price">Toplam Fiyat: ₺0.00</p>
+        </div>
+
+        <!-- Sepet İşlemleri -->
+        <div id="cart-actions">
+            <button id="clear-cart-btn">Sepeti Temizle</button>
+            <button id="checkout-btn">Ödeme Yap</button>
+        </div>
+    </div>
+
+    <!-- Sepetteki Ürünleri Görüntülemek için Kullanılan Script Dosyası -->
+    <script src="cart.js"></script>
+    <!-- Sepete Ürün Ekleme için Kullanılan Script Dosyası -->
+    <script src="app.js"></script>
+</body>
+</html>
